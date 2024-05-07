@@ -1,0 +1,1 @@
+link of the initail setup : https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.5&packaging=jar&jvmVersion=17&groupId=com.lachgar&artifactId=security&name=security-api&description=Spring%20Boot%20project%20for%20security%20configuration&packageName=com.lachgar.security&dependencies=web,data-jpa,validation,mail,security,thymeleaf,lombok,mysql
