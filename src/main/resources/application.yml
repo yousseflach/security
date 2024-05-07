@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: Digitalisation_Processus_Recrutement
+  datasource:
+    url: jdbc:mysql://localhost:3306/security?createDatabaseIfNotExist=true&useSSL=false  # Update URL for MySQL
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver  # Update driver class for MySQL
+  jpa:
+    hibernate:
+      ddl-auto: update  # Keep your existing settings
+    show-sql: true  # Keep your existing settings
+    properties:
+      hibernate:
+        format_sql: true  # Keep your existing settings
+    database: mysql  # Update database type to MySQL
+    database-platform: org.hibernate.dialect.MySQLDialect  # Update dialect for MySQL
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 50MB
+springdoc:
+  default-produces-media-type: application/json
+
+server:
+  servlet:
+    context-path: /api/v1/
+  port: 8088
