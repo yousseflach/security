@@ -85,7 +85,8 @@ public class UserEntity implements UserDetails, Principal {
 
     @Override
     public boolean isAccountNonLocked() {
-        return !accountLocked;
+        //  return !accountLocked;
+        return true;
     }
 
     @Override
@@ -95,7 +96,8 @@ public class UserEntity implements UserDetails, Principal {
 
     @Override
     public boolean isEnabled() {
-        return enabled;
+        //  return enabled;
+        return true;
     }
 
     public String fullName(){
