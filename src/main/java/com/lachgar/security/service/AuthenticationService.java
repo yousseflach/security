@@ -32,7 +32,7 @@ public class AuthenticationService {
     private final JwtService jwtService;
 
     public void register(RegistrationRequestDTO request) throws MessagingException {
-        var userRole = roleRepository.findByName("USER")
+        var userRole = roleRepository.findByName("ADMIN")
                 // todo - better exception handling
                 .orElseThrow(() -> new IllegalStateException("Role USER was not initialized"));
 
