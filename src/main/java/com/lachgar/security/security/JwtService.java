@@ -1,6 +1,5 @@
 package com.lachgar.security.security;
 
-import com.lachgar.security.entity.UserEntity;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
